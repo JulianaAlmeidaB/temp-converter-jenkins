@@ -6,7 +6,7 @@ public class ConversorTemperatura {
     private static final double RAZAO = 1.8;
 
     public static double paraCelsius(double fahrenheit) {
-        return (fahrenheit - OFFSET) / RAZAO;
+        return (fahrenheit - OFFSET) * RAZAO;
     }
 
     public static double paraFahrenheit(double celsius) {
